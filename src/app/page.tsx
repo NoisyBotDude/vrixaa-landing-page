@@ -8,6 +8,7 @@ import TeamSection from "@/components/TeamSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import WhoWeAreSection from "@/components/WhoWeAreSection";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -63,14 +64,17 @@ export default function Home() {
                   size="lg" 
                   className="text-lg bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  Explore Our Vision
+                  <Link href="/#about" className="text-white">
+                    Explore Our Vision
+                  </Link>
                 </Button>
                 <Button 
                   size="lg" 
-                  variant="outline" 
-                  className="text-lg border-2 border-white/80 text-white hover:bg-white/10 shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="text-lg bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  Contact Us
+                  <Link href="/#contact" className="text-white">
+                    Contact Us
+                  </Link>
                 </Button>
               </motion.div>
             </motion.div>

@@ -7,8 +7,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function ContactSection() {
   return (
-    <section className="py-16 px-4 bg-secondary/50">
-      <div className="container mx-auto max-w-6xl">
+    <section className="py-24 px-4 bg-background" id="contact">
+      <div className="container mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

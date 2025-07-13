@@ -30,7 +30,7 @@ const WhoWeAreSection = () => {
   ];
 
   return (
-    <section className="py-24 px-4 bg-background">
+    <section className="py-24 px-4 bg-background/50" id="about">
       <div className="container mx-auto max-w-7xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

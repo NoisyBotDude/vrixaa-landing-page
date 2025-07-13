@@ -1,0 +1,38 @@
+name: 🚀 Deploy Next.js App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: ⬇️ Checkout code
+      uses: actions/checkout@v3
+
+    - name: 🚀 Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: 🛠️ Install deps & build
+      run: |
+        npm install
+        npm run build
+
+    - name: 🔐 SSH Deploy
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.PRIVATE_KEY }}
+        script: |
+          cd ${{ secrets.APP_DIR }}
+          git pull origin main
+          npm install
+          npm run build
+          pm2 restart nextjs-landing

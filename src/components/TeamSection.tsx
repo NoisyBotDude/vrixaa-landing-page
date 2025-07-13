@@ -12,7 +12,7 @@ const teamMembers = [
     name: "Ronit Choudhury",
     role: "Founder & CEO",
     description: "Provides strategic leadership and drives the vision, operations, and growth of VrixaaLabs.",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=987",
+    image: "/images/ronit.jpeg",
     social: {
       linkedin: "#",
       twitter: "#"
@@ -32,7 +32,7 @@ const teamMembers = [
     name: "Dr. Rupam Goswami",
     role: "Honorary Director",
     description: "Offers strategic academic insights and helps guide institutional alignment.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=987",
+    image: "/images/rupam.jpeg",
     social: {
       linkedin: "#",
       twitter: "#"
@@ -42,7 +42,7 @@ const teamMembers = [
     name: "Dr. Manuj Hazarika",
     role: "Advisor",
     description: "Advises on ecosystem collaboration, educational impact, and long-term scalability.",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=987",
+    image: "/images/manuj.jpeg",
     social: {
       linkedin: "#",
       twitter: "#"
